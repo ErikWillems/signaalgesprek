@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signaalgesprek</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        /* Primary colors */
+        --color-yellow: #fed767;
+        --color-red: #f1592f;
+        --color-black: #000000;
+        --color-white: #ffffff;
+
+        --bs-body-bg: var(--color-yellow);
+        --font-weight-bold: 600;
+      }
+
+      .btn {
+        --bs-btn-font-weight: var(--font-weight-bold);
+      }
+
+      .navbar {
+        --bs-navbar-color: var(--color-red);
+
+        --bs-navbar-brand-color: var(--color-black);
+        text-transform: uppercase;
+      }
+
+      .navbar-nav {
+        --bs-nav-link-font-weight: var(--font-weight-bold);
+        --bs-nav-link-color: var(--color-black);
+        --bs-nav-link-hover-color: var(--color-white);
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-weight: var(--font-weight-bold);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h1 {
+        margin-bottom: 2rem;
+      }
+
+      .row {
+        margin-top: 2rem;
+      }
+
+      .fw-bold {
+        font-weight: var(--font-weight-bold) !important;
+      }
+
+      /* Navbar styling */
+      nav {
+        background-color: var(--color-red);
+        position: sticky;
+      }
+
+      main {
+        /* Add padding so content isn't hidden under navbar */
+        padding: 5rem 0rem;
+        line-height: 1.6;
+      }
+
+      main p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">[Brand Signaal Gesprek]</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Wat</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Waarom</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Wie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Waar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Hoe</a></li>
+            <li class="nav-item">
+              <a class="btn bt btn-light text-danger ms-lg-4 ms-0" href="#"
+                >Doe de test</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h2>[Logo]<br /><br />Signaal<br />gesprek</h2>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <h1>Deel het gesprek en laat verhalen ontstaan</h1>
+          </div>
+        </div>
+        <p class="fw-bold">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in
+          augue at risus ultrices pretium. Nulla nec massa vel ex egestas
+          efficitur eu non magna. Nunc iaculis risus est, dignissim cursus enim
+          vestibulum at. Mauris justo ante, molestie quis magna ut, rhoncus
+          convallis libero. Ut quis sollicitudin nisi, vel tempor arcu.
+          Vestibulum non iaculis metus. Donec fermentum iaculis fringilla. In
+          aliquet, lectus non semper varius, felis ante sodales risus, vel
+          gravida magna purus vulputate enim. Nunc tincidunt elementum erat,
+          quis viverra lectus rutrum nec. Orci varius natoque penatibus et
+          magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat
+          volutpat. Duis eu semper odio. Praesent tempor consectetur erat.
+          Aenean dapibus lorem sit amet lacus tristique scelerisque.
+        </p>
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Wat</h2>
+            <p>
+              Duis laoreet, dolor at dapibus tincidunt, mi nisl volutpat lectus,
+              at feugiat enim magna ut ipsum. Nunc condimentum ex vel lectus
+              elementum, id faucibus turpis accumsan. Suspendisse vel lacinia
+              odio, non varius diam. Morbi consectetur venenatis erat, nec
+              consequat lacus mollis ut. Vivamus euismod ultrices nulla, vel
+              consectetur quam. Suspendisse ullamcorper tempus dui nec
+              pellentesque. Sed lorem sapien, maximus et pellentesque ut,
+              tristique ac libero. Integer mollis consequat enim, ac sodales
+              odio vestibulum sed. Maecenas pulvinar lacinia mollis.
+            </p>
+            <h3>Suspendisse sollicitudin</h3>
+            <ul>
+              <li>Sed lorem sapien, maximus et pellentesque ut.</li>
+              <li>Maecenas pulvinar lacinia mollis.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 ms-auto">
+            <h2>Waarom</h2>
+            <p>
+              Cras egestas pellentesque pretium. Donec porttitor ligula odio, eu
+              semper purus mattis ac. Aliquam porttitor felis et mi posuere
+              malesuada. Vestibulum ac fermentum eros. Aliquam vitae faucibus
+              massa, quis eleifend orci. Aliquam dignissim, ante tristique
+              iaculis pellentesque, eros leo fringilla lorem, vel fermentum quam
+              mi et urna. Nulla blandit sed odio ut tristique. Nullam in nisl
+              eleifend, vulputate libero quis, volutpat purus.
+            </p>
+            <h3>Aliquam porttitor</h3>
+            <ul>
+              <li>Aliquam dignissim, ante tristique iaculis pellentesque.</li>
+              <li>Nullam in nisl eleifend.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Wie</h2>
+            <p>
+              Quisque ante tortor, blandit at risus in, vehicula auctor turpis.
+              In quis posuere diam. Praesent luctus porta mattis. Ut quis lacus
+              quis sapien tincidunt porttitor non vitae leo. Aenean feugiat
+              tortor non nibh placerat viverra. Nulla consequat ac quam nec
+              varius. Suspendisse sollicitudin accumsan mi sit amet auctor.
+              Phasellus tincidunt vehicula sapien, non venenatis lorem pulvinar
+              ac. Aliquam quis faucibus ante, et bibendum sapien. Proin
+              sollicitudin purus lorem. Fusce venenatis elit id ex vehicula, non
+              molestie lacus euismod. Pellentesque ac ornare sem. Nunc interdum
+              tempus turpis, eget lacinia sapien aliquet nec. Nunc iaculis orci
+              a laoreet venenatis.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 ms-auto">
+            <h2>Waar</h2>
+            <p>
+              Sed consectetur leo ac nunc tempor, eget suscipit mauris laoreet.
+              Vivamus posuere auctor magna, sodales pellentesque diam auctor
+              sed. Duis non justo at magna egestas efficitur. Sed vel pharetra
+              enim. Donec nibh magna, efficitur quis interdum sit amet, iaculis
+              ut lorem. Aliquam erat volutpat. Pellentesque habitant morbi
+              tristique senectus et netus et malesuada fames ac turpis egestas.
+              Suspendisse eget suscipit libero, sed suscipit tellus. Sed et
+              elementum massa.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Hoe</h2>
+            <p>
+              Sed consectetur leo ac nunc tempor, eget suscipit mauris laoreet.
+              Vivamus posuere auctor magna, sodales pellentesque diam auctor
+              sed. Duis non justo at magna egestas efficitur. Sed vel pharetra
+              enim. Donec nibh magna, efficitur quis interdum sit amet, iaculis
+              ut lorem. Aliquam erat volutpat. Pellentesque habitant morbi
+              tristique senectus et netus et malesuada fames ac turpis egestas.
+              Suspendisse eget suscipit libero, sed suscipit tellus. Sed et
+              elementum massa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
