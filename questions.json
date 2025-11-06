@@ -1,0 +1,16 @@
+[
+  {
+    "label": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    "answers": [
+      { "label": "Fusce nunc nunc, pharetra eget sem et." },
+      { "label": "Etiam aliquet diam et porttitor finibus." }
+    ]
+  },
+  {
+    "label": "Aliquam interdum tincidunt eleifend?",
+    "answers": [
+      { "label": "Praesent at ante egestas, efficitur ante lobortis." },
+      { "label": "Morbi ultricies mauris ac massa malesuada." }
+    ]
+  }
+]
