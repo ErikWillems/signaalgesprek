@@ -98,12 +98,32 @@
       main p {
         text-align: justify;
       }
+
+      .logo {
+        width: 10rem;
+        height: auto;
+      }
+
+      .logo-menu {
+        width: auto;
+        height: 1rem;
+        opacity: 0;
+        transform: translateX(-1rem);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+
+      .logo-menu-visible {
+        opacity: 1;
+        transform: translateX(0rem);
+      }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#">[Brand Signaal Gesprek]</a>
+        <a class="navbar-brand" href="#">
+          <img class="logo-menu" src="logo-menu.svg"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -134,7 +154,9 @@
     </nav>
     <main>
       <div class="container">
-        <h2>[Logo]<br /><br />Signaal<br />gesprek</h2>
+        <div>
+          <img class="logo" id="logo" src="logo.svg" />
+        </div>
         <div class="row mt-5">
           <div class="col-md-6">
             <h1>Deel het gesprek en laat verhalen ontstaan</h1>
@@ -249,5 +271,22 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"
+      integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const logoMain = d3.select(".logo");
+      const logoMenu = d3.select(".logo-menu");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          logoMenu.classed("logo-menu-visible", !entry.isIntersecting);
+        });
+      });
+
+      observer.observe(logoMain.node());
+    </script>
   </body>
 </html>
