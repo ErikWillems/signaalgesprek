@@ -1,25 +1,305 @@
 [
   {
     "type": "intro",
-    "label": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar elit in tellus posuere, eu congue neque interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean consectetur iaculis libero nec efficitur. Integer nec volutpat justo, non bibendum arcu. "
+    "label": "Ga na hoe goed jij bent voorbereid om met mensen in gesprek te gaan over wat er speelt in hun wereld - of dat nu gaat over cultuur, sport, klimaat of het dagelijks leven. Na elke vraag zie je meteen wat je keuze zegt. Aan het eind krijg je jouw profiel en advies."
   },
   {
-    "label": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    "label": "Wanneer zou jij zo'n groepsgesprek plannen?",
     "answers": [
-      { "label": "Fusce nunc nunc, pharetra eget sem et." },
-      { "label": "Etiam aliquet diam et porttitor finibus." },
       {
-        "label": "Maecenas commodo erat id elit aliquet, eu tempus orci lobortis."
+        "label": "Gewoon op een moment dat in de redactiekalender past.",
+        "feedback": "Je denkt praktisch. Slim, maar kijk ook wat past bij de deelnemers.",
+        "value": 1
+      },
+      {
+        "label": "Op een tijdstip dat mensen over het algemeen meestal kunnen.",
+        "feedback": "Goed uitgangspunt. Check wel of dat ook fijn voelt voor de groep.",
+        "value": 2
+      },
+      {
+        "label": "Op een moment dat aansluit bij het ritme van de deelnemers van deze doelgroep (zoals buiten hun werktijden of in het weekend).",
+        "feedback": "Perfect. Je denkt vanuit hun perspectief.",
+        "value": 3
       }
     ]
   },
   {
-    "label": "Aliquam interdum tincidunt eleifend?",
+    "label": "Wat hoort er volgens jou bij de sfeer van zo'n bijeenkomst?",
     "answers": [
-      { "label": "Praesent at ante egestas, efficitur ante lobortis." },
-      { "label": "Morbi ultricies mauris ac massa malesuada." },
       {
-        "label": "Phasellus urna risus, vehicula nec nisi vel."
+        "label": "Een koekje en koffie, klaar.",
+        "feedback": "Soms is eenvoud prima, maar eten kan ook verbinden.",
+        "value": 1
+      },
+      {
+        "label": "Iets kleins en passend bij het tijdstip: broodjes, fruit of snack.",
+        "feedback": "Lekker praktisch en gastvrij.",
+        "value": 2
+      },
+      {
+        "label": "Een uitgebreide lunch, soep of iets warms.",
+        "feedback": "Gezellig én verbindend, zeker bij avondgesprekken.",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "label": "Hoe ga je om met eet- en drinkvoorkeuren?",
+    "answers": [
+      {
+        "label": "Dat zie ik op de dag zelf wel.",
+        "feedback": "Een kleine check vooraf voorkomt ongemak.",
+        "value": 1
+      },
+      {
+        "label": "Ik vraag het als iemand er zelf over begint.",
+        "feedback": "Goed begin! Nóg beter is als je dit proactief checkt.",
+        "value": 2
+      },
+      {
+        "label": "Ik vraag vooraf wat prettig is (halal, vegan, geen alcohol).",
+        "feedback": "Mooi, zo voelt iedereen zich welkom.",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "label": "Waar zou jij het gesprek het liefst voeren?",
+    "answers": [
+      {
+        "label": "Gewoon, op de redactie.",
+        "feedback": "Handig, maar kijk of dat ook fijn is voor de deelnemers en of er een plek is waar het niet stoort.",
+        "value": 1
+      },
+      {
+        "label": "In een rustige ruimte of zaaltje in de buurt.",
+        "feedback": "Fijne middenweg: vertrouwd, maar let op of je toegang hebt tot faciliteiten zoals toiletten en koffie/thee.",
+        "value": 2
+      },
+      {
+        "label": "Afhankelijk van de groep de ene keer op de redactie, de andere keer waar het voor deelnemers het beste uitkomt.",
+        "feedback": "Ideaal, dat laat zien dat je oog hebt voor context.",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "label": "Hoe denk je over toegankelijkheid?",
+    "answers": [
+      {
+        "label": "Daar denk ik eerlijk gezegd niet zo aan.",
+        "feedback": "Geen ramp, maar let op drempels (letterlijk en figuurlijk).",
+        "value": 1
+      },
+      {
+        "label": "Ik hou er rekening mee als iemand iets aangeeft.",
+        "feedback": "Goed dat je luistert. Nóg beter is om vooraf te checken.",
+        "value": 2
+      },
+      {
+        "label": "Ik controleer vooraf of iedereen comfortabel mee kan doen.",
+        "feedback": "Top. Zo maak je het gesprek echt inclusief.",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "label": "Hoe goed ken jij je publiek?",
+    "answers": [
+      {
+        "label": "Wie zijn dat?",
+        "feedback": "Je kan veel winnen door eens te onderzoeken wie er in je publiek zit.",
+        "value": 1
+      },
+      {
+        "label": "Redelijk, maar ik praat zelden met ze.",
+        "feedback": "Een klein gesprek kan al verrassend veel opleveren.",
+        "value": 2
+      },
+      {
+        "label": "Heel goed, ik hoor vaak wat er bij hen leeft.",
+        "feedback": "Mooi! Zo kan je nieuwe verhalen vinden, nieuwe stemmen ontdekken en nieuwe inzichten opdoen.",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "label": "Wat is je insteek bij het organiseren van zo'n gesprek?",
+    "answers": [
+      {
+        "label": "Ik hoop dat er bruikbare verhalen uitkomen.",
+        "feedback": "Logisch, maar luister ook zonder direct resultaat te verwachten.",
+        "value": 2
+      },
+      {
+        "label": "Ik wil vooral beter begrijpen wat er speelt, en hoop dat het verhalen oplevert.",
+        "feedback": "Precies de juiste intentie voor een Signaalgesprek.",
+        "value": 3
+      },
+      {
+        "label": "Ik weet nog niet wat ik eruit wil halen.",
+        "feedback": "Dat is prima. Soms ontdek je de waarde gaandeweg.",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "label": "Hoe goed weet jij wie je wilt uitnodigen?",
+    "answers": [
+      {
+        "label": "Ik moet nog uitzoeken wie dat zouden kunnen zijn.",
+        "feedback": "Begin met één naam of contact. De rest volgt wel.",
+        "value": 2
+      },
+      {
+        "label": "Ik ken een paar mensen of organisaties die kunnen helpen.",
+        "feedback": "Mooi, hou er in je planning rekening mee dat zij ook tijd nodig hebben om te reageren.",
+        "value": 3
+      },
+      {
+        "label": "Ik weet precies wie ik wil vragen en waarom.",
+        "feedback": "Dat is sterk: zorg wel dat er ook ruimte blijft voor onverwachte stemmen. Vraag het bijvoorbeeld nog eens na bij collega's en betrokken organisaties.",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "label": "Wat doe je als een thema gevoelig ligt?",
+    "answers": [
+      {
+        "label": "Ik leid het gesprek zelf - ik ken het onderwerp tenslotte goed.",
+        "feedback": "Overweeg een externe moderator. Die kan meer rust brengen.",
+        "value": 1
+      },
+      {
+        "label": "Ik bespreek vooraf hoe we respectvol met spanningen omgaan.",
+        "feedback": "Heel goed, zo voorkom je misverstanden, maar overweeg ook een externe moderator.",
+        "value": 2
+      },
+      {
+        "label": "Ik laat een externe persoon het gesprek begeleiden.",
+        "feedback": "Slim als je afstand wilt bewaren en iedereen ruimte wilt geven, maar spreek het wel goed door met de externe moderator.",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "label": "Een deelnemer zegt: “Ze zeggen dat ik steeds te laat ben met mijn huur, maar ik krijg al maanden geen duidelijk antwoord van ze over mijn betalingsregeling.“ Wat hoor je hier vooral?",
+    "answers": [
+      {
+        "label": "Een klacht over administratieve fouten.",
+        "feedback": "Klopt, maar luister ook naar het gevoel erachter.",
+        "value": 1
+      },
+      {
+        "label": "Frustratie over machteloosheid.",
+        "feedback": "Goed gehoord. Het gaat om erkenning.",
+        "value": 2
+      },
+      {
+        "label": "Beide: een praktisch probleem én een gevoel van niet gehoord worden.",
+        "feedback": "Perfect. Je hoort het feit én het signaal erachter.",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "label": "Hoe denk je over praten met je publiek?",
+    "answers": [
+      {
+        "label": "Wij weten meestal wel wat er speelt.",
+        "feedback": "Je bent waarschijnlijk al goed op de hoogte, maar door in gesprek te gaan ontdek je soms nieuwe kanten van wat er speelt.",
+        "value": 1
+      },
+      {
+        "label": "Leuk idee, al hoop ik dat het niet te veel tijd kost.",
+        "feedback": "Je hebt vast al gevoel voor wat er speelt. Door tijd te nemen om te luisteren, hoor je vaak nét iets nieuws.",
+        "value": 2
+      },
+      {
+        "label": "Nodig. Zonder contact mis je wat er echt leeft.",
+        "feedback": "Precies, dit is waar het Signaalgesprek begint.",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "label": "Een deelnemer zegt tijdens het gesprek: “In dat artikel over onze wijk stond iets dat niet klopte. Jullie hebben een nieuwsbericht overgenomen zonder met ons te praten.” Hoe reageer jij?",
+    "answers": [
+      {
+        "label": "Ik leg uit hoe dat is gegaan en dat er soms fouten kunnen insluipen.",
+        "feedback": "Logisch dat je wilt uitleggen hoe het werkt. Probeer ook te horen wat de fout voor de ander heeft betekend.",
+        "value": 1
+      },
+      {
+        "label": "Ik vraag wat het voor hen heeft gedaan en hoe we het beter hadden kunnen aanpakken.",
+        "feedback": "Mooi. Zo wordt kritiek een gesprek in plaats van een botsing.",
+        "value": 3
+      },
+      {
+        "label": "Ik luister eerst om te begrijpen waarom het raakt, zonder meteen te reageren.",
+        "feedback": "Sterk - zo ontstaat ruimte voor herstel én beter contact. Je kunt daarna eventueel uitleggen wat er is gebeurd, of overleggen hoe het voortaan anders kan.",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "label": "Hoe goed kan jij luisteren in een groepsgesprek?",
+    "answers": [
+      {
+        "label": "Ik ben snel geneigd te reageren of samenvatten.",
+        "feedback": "Je hebt de vaardigheid om een Signaalgesprek te modereren, maar durf soms eens stiltes te laten vallen. Vaak vullen mensen hun verhaal dan nog aan.",
+        "value": 2
+      },
+      {
+        "label": "Ik kan goed luisteren, maar mis soms verbanden.",
+        "feedback": "Soms helpt het om te herhalen wat iemand heeft gezegd, en te vragen of je het goed hebt begrepen. Dan leggen ze het nog eens uit. Overweeg iemand anders te laten modereren zodat je je kunt concentreren op de rode draad.",
+        "value": 1
+      },
+      {
+        "label": "Ik let op wat mensen zeggen en op wat er ongezegd blijft.",
+        "feedback": "Dat is precies de vaardigheid die een Signaalgesprek sterk maakt, en waar nodig mag je zeker doorvragen.",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "label": "Hoe kijk je naar je redactieomgeving?",
+    "answers": [
+      {
+        "label": "Ik moet mijn collega’s nog overtuigen dat dit nuttig is.",
+        "feedback": "Mooi, neem ze stap voor stap mee in je enthousiasme. Veel succes!",
+        "value": 1
+      },
+      {
+        "label": "De meesten staan er wel voor open, als het niet te lang duurt.",
+        "feedback": "Bouw voort op dat enthousiasme en deel kleine successen. Probeer een Signaalgesprek op een rustige plek te plannen, of op een rustig tijdstip.",
+        "value": 2
+      },
+      {
+        "label": "De hele redactie wil aan de slag met publieksbetrokkenheid.",
+        "feedback": "Ideaal. Die cultuur werkt in je voordeel.",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "label": "Hoe flexibel ben je in wat er uit het gesprek mag komen?",
+    "answers": [
+      {
+        "label": "Ik wil vooral verhalen die we kunnen publiceren.",
+        "feedback": "Begrijpelijk, en dat gaat gebeuren! Misschien haal je zelfs nog andere inzichten uit het gesprek, bijvoorbeeld over je tone of voice.",
+        "value": 1
+      },
+      {
+        "label": "Ik hoop dat het gesprek nieuwe ideeën oplevert, ook als die onverwacht zijn.",
+        "feedback": "Zo'n open houding! Mooi. Sta je er ook voor open iets aan te passen aan je redactionele koers, zoals je tone of voice?",
+        "value": 2
+      },
+      {
+        "label": "Ik laat me graag verrassen, zelfs als dat onze koers verandert.",
+        "feedback": "Wauw. Dat is nu eens echte nieuwsgierigheid.",
+        "value": 3
       }
     ]
   }

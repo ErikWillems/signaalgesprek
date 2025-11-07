@@ -19,7 +19,7 @@ const digestQuestions = function () {
               elem.append("p").text(question.label).attr("class", "mt-0 mb-4");
               elem
                 .append("button")
-                .attr("class", "btn btn-lg btn-light")
+                .attr("class", "btn btn-lg btn-secondary")
                 .text("Start de test!")
                 .on("click", function () {
                   question.selected = -1;
