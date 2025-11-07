@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Signaalgesprek</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -85,6 +86,10 @@
 
       .card-body {
         padding: 3rem;
+        background-image: url("./logo-card.svg");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 20px) calc(100% - 20px);
+        background-size: 2rem auto;
       }
 
       .card-body h2 {
@@ -167,6 +172,13 @@
         line-height: 1;
       }
 
+      blockquote span {
+        display: block;
+        text-align: right;
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+      }
+
       section {
         margin-top: 5rem;
       }
@@ -187,6 +199,8 @@
       .logo-container {
         display: inline-block;
         background-color: var(--color-yellow);
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
       }
 
       .logo-menu {
@@ -333,8 +347,8 @@
         <!-- QUOTE 1-->
         <blockquote>
           Ik kan hier wel vijf, zes onderwerpen uithalen die ik anders nooit had
-          ontdekt.<br />
-          - Jana Flekken, Alkmaarsche Courant
+          ontdekt.
+          <span>Jana Flekken, Alkmaarsche Courant</span>
         </blockquote>
         <section>
           <h2 id="wat">Wat is een signaalgesprek?</h2>
@@ -359,8 +373,8 @@
         <blockquote>
           In een paar uur kreeg ik dankzij de discussie
           <strong>veel nieuwe inzichten</strong>. Dat lukt nooit als je mensen
-          apart spreekt. En mijn netwerk is in die paar uur flink gegroeid.<br />
-          - Debbie de Vries, Dagblad Waterland
+          apart spreekt. En mijn netwerk is in die paar uur flink gegroeid.
+          <span>Debbie de Vries, Dagblad Waterland</span>
         </blockquote>
         <section>
           <div class="card">
@@ -389,7 +403,7 @@
 
         <blockquote>
           Ik voel me meer verbonden met de krant, journalisten zijn nu minder
-          eng.<br />- Deelnemer
+          eng.<span>Deelnemer<span>
         </blockquote>
         <section>
           <h2 id="waarom">Waarom?</h2>
@@ -412,8 +426,7 @@
         </section>
         <blockquote>
           Waanzinnig dat een gesprek van maar twee uur zoveel kan opleveren
-          waarvan ik echt geen idee had.<br />- Jana Flekken, Alkmaarsche
-          Courant
+          waarvan ik echt geen idee had.<span>Jana Flekken, Alkmaarsche Courant</span>
         </blockquote>
         <section>
           <div class="card">
@@ -457,8 +470,8 @@
         <blockquote>
           Tijdens het gesprek konden we goed uitleggen waarom bepaalde
           beslissingen zijn genomen. Er werd open gesproken over wat niet goed
-          ging.<br />
-          - Debbie de Vries, Dagblad Waterland
+          ging.
+          <span>Debbie de Vries, Dagblad Waterland</span>
         </blockquote>
 
         <section>
@@ -539,7 +552,7 @@
         </section>
         <section>
           <!-- Quiz -->
-          <h2 id="test">Test: ben jij klaar voor het Signaalgesprek</h2>
+          <h2 id="test">Test: ben jij klaar voor het Signaalgesprek?</h2>
           <div class="questions-container mt-4">
             <div class="questions"></div>
           </div>
