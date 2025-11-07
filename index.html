@@ -35,7 +35,7 @@
         --color-black: #000000;
         --color-white: #ffffff;
 
-        --bs-body-bg: var(--color-yellow);
+        --bs-body-bg: var(--color-white);
         --font-weight-bold: 600;
       }
 
@@ -46,6 +46,14 @@
       .btn.btn-link {
         --bs-btn-color: var(--color-black);
         --bs-btn-hover-color: var(--color-black);
+      }
+
+      .btn.btn-light {
+        --bs-btn-bg: var(--color-yellow);
+        --bs-btn-hover-bg: color-mix(in srgb, var(--color-yellow) 90%, black);
+        --bs-btn-color: var(--color-black);
+        --bs-btn-hover-color: var(--color-black);
+        --bs-btn-border-color: 0px;
       }
 
       .navbar {
@@ -106,8 +114,6 @@
       }
 
       main {
-        /* Add padding so content isn't hidden under navbar */
-        padding: 5rem 0rem;
         line-height: 1.6;
       }
 
@@ -116,8 +122,13 @@
       }
 
       .logo {
-        width: 10rem;
+        width: 8rem;
         height: auto;
+      }
+
+      .logo-container {
+        display: inline-block;
+        background-color: var(--color-yellow);
       }
 
       .logo-menu {
@@ -232,9 +243,7 @@
             <li class="nav-item"><a class="nav-link" href="#">Waar</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Hoe</a></li>
             <li class="nav-item">
-              <a class="btn bt btn-light text-danger ms-lg-4 ms-0" href="#"
-                >Doe de test</a
-              >
+              <a class="btn bt btn-light ms-lg-4 ms-0" href="#">Doe de test</a>
             </li>
           </ul>
         </div>
@@ -242,7 +251,7 @@
     </nav>
     <main>
       <div class="container">
-        <div>
+        <div class="logo-container p-5">
           <img class="logo" id="logo" src="logo.svg" />
         </div>
 
@@ -264,9 +273,7 @@
               creëren voor je journalistiek. En dat in één sessie van 2 tot 3
               uur.
             </p>
-            <a class="mt-3 btn btn-lg text-danger btn-light" href="#"
-              >Doe de test!</a
-            >
+            <a class="mt-3 btn btn-lg btn-light" href="#">Doe de test!</a>
           </div>
         </div>
         <!-- QUOTE 1-->
@@ -327,9 +334,8 @@
           </div>
         </div>
 
-        <!-- 2 col-->
         <div class="row mt-5">
-          <div class="col-md-8">
+          <div class="col-12 col-lg-10 col-xl-8">
             <h2>Een Signaalgesprek is handig als je:</h2>
             <ul>
               <li>
@@ -346,8 +352,11 @@
                 handje helpt
               </li>
             </ul>
+            <p>
+              <img src="image1.jpg" class="img-fluid" alt="Responsive image" />
+            </p>
           </div>
-          <div class="col-md-6"></div>
+          <div class="col-md-4"></div>
         </div>
 
         <!-- QUOTE 3-->
@@ -362,7 +371,7 @@
 
         <!-- 2 col-->
         <div class="row mt-5">
-          <div class="col-md-8">
+          <div class="col-12 col-lg-10 col-xl-8">
             <h2>Waarom?</h2>
             <p>Een Signaalgesprek levert heel wat op:</p>
             <ul>
@@ -374,7 +383,6 @@
               <li>Meer begrip en steun voor je journalistiek</li>
             </ul>
           </div>
-          <div class="col-md-6"></div>
         </div>
 
         <!-- QUOTE 4-->
@@ -441,9 +449,7 @@
               op jouw redactie.
             </p>
             <p>
-              <a class="btn btn-lg text-danger btn-light" href="#"
-                >Download alle documenten</a
-              >
+              <a class="btn btn-light" href="#">Download alle documenten</a>
             </p>
             <p>
               Heb je nog vragen? Of wil je gratis begeleiding? Mail dan naar:
@@ -494,7 +500,7 @@
             <h2>Vragen? Of wil je samenwerken?</h2>
             <p>
               Bel of app Josje Kerkhoven: 06-44130324. Mailen kan ook:
-              josjekerkhoven@svdjincubator.nl
+              signaalgesprek@gmail.com
             </p>
           </div>
         </div>
