@@ -116,6 +116,7 @@
         font-weight: var(--font-weight-bold);
         letter-spacing: 1px;
         text-transform: uppercase;
+        scroll-margin-top: 100px;
       }
 
       h1,
@@ -291,13 +292,14 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Wat</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Waarom</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Wie</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Waar</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Hoe</a></li>
+            <li class="nav-item"><a class="nav-link" href="#wat">Wat</a></li>
             <li class="nav-item">
-              <a class="btn bt btn-primary ms-lg-4 ms-0" href="#"
+              <a class="nav-link" href="#waarom">Waarom</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#hoe">Hoe</a></li>
+            <li class="nav-item"><a class="nav-link" href="#wie">Wie</a></li>
+            <li class="nav-item">
+              <a class="btn bt btn-primary ms-lg-4 ms-0" href="#test"
                 >Doe de test</a
               >
             </li>
@@ -325,7 +327,7 @@
             scherpere redactionele keuzes te maken en meer draagvlak te creëren
             voor je journalistiek. En dat in één sessie van 2 tot 3 uur.
           </p>
-          <a class="mt-3 btn btn-lg btn-primary" href="#">Doe de test!</a>
+          <a class="mt-3 btn btn-lg btn-primary" href="#test">Doe de test!</a>
         </section>
         <!-- QUOTE 1-->
         <blockquote>
@@ -334,7 +336,7 @@
           - Jana Flekken, Alkmaarsche Courant
         </blockquote>
         <section>
-          <h2>Wat is dit?</h2>
+          <h2 id="wat">Wat is een signaalgesprek?</h2>
           <p>
             Een <strong>Signaalgesprek</strong> is een
             <strong>bijeenkomst van 2 tot 3 uur</strong> met een groep mensen
@@ -352,16 +354,7 @@
             voor nieuwe verhalen, samenwerkingen of vervolgonderzoek.
           </p>
         </section>
-        <section>
-          <h2>Vanwaar dit idee?</h2>
-          <p>
-            De band tussen journalist en publiek is vaak óf bron, óf lezer.
-            Jammer, want zo missen we frisse perspectieven en nieuwe stemmen.
-            <strong>Het publiek weet veel, maar we luisteren te weinig.</strong>
-            Het is tijd dat we mensen mee laten denken en zo ook het vertrouwen
-            in de journalistiek versterken.
-          </p>
-        </section>
+
         <blockquote>
           In een paar uur kreeg ik dankzij de discussie
           <strong>veel nieuwe inzichten</strong>. Dat lukt nooit als je mensen
@@ -398,8 +391,15 @@
           eng.<br />- Deelnemer
         </blockquote>
         <section>
-          <h2>Waarom?</h2>
-          <p>Een Signaalgesprek levert heel wat op:</p>
+          <h2 id="waarom">Waarom?</h2>
+          <p>
+            De band tussen journalist en publiek is vaak óf bron, óf lezer.
+            Jammer, want zo missen we frisse perspectieven en nieuwe stemmen.
+            <strong>Het publiek weet veel, maar we luisteren te weinig.</strong>
+            Het is tijd dat we mensen mee laten denken en zo ook het vertrouwen
+            in de journalistiek versterken.
+          </p>
+          <p>Een Signaalgesprek levert bovendien heel wat op:</p>
           <ul>
             <li>2 tot 5 nieuwe verhaalideeën</li>
             <li>Waardevolle informatie uit de eerste hand</li>
@@ -417,7 +417,7 @@
         <section>
           <div class="card">
             <div class="card-body">
-              <h2>Hoe werkt het?</h2>
+              <h2 id="hoe">Hoe werkt het?</h2>
               <h3>Ronde 1: kennismaking + uitdagingen delen</h3>
               <p>
                 Iedereen stelt zich kort voor en deelt één tot drie uitdagingen.
@@ -445,6 +445,10 @@
                 je groep. Zorg altijd voor lunch of snacks: dat doet wonderen
                 voor de sfeer.
               </p>
+
+              <!--<a class="btn btn-secondary" href="#"
+                >Ga aan de slag en download alle documenten</a
+              >-->
             </div>
           </div>
         </section>
@@ -457,24 +461,7 @@
         </blockquote>
 
         <section>
-          <h2>Wil je zelf aan de slag?</h2>
-          <p>
-            Hier vind je alle documenten om een Signaalgesprek te organiseren op
-            jouw redactie.
-          </p>
-          <p>
-            <a class="btn btn-lg btn-primary" href="#"
-              >Download alle documenten</a
-            >
-          </p>
-          <p>
-            Heb je nog vragen? Of wil je gratis begeleiding? Mail dan naar:
-            josjekerkhoven@svdjincubator.nl
-          </p>
-        </section>
-
-        <section>
-          <h2>Wie zit erachter?</h2>
+          <h2 id="wie">Wie zit erachter?</h2>
           <p>
             Het Signaalgesprek komt voort uit experimenteel innovatief onderzoek
             bij het Incubatorprogramma van het Stimuleringsfonds voor de
@@ -496,7 +483,7 @@
         </section>
         <section>
           <!-- Quiz -->
-          <h2>Hoe goed ken jij je publiek écht?</h2>
+          <h2 id="test">Test: ben jij klaar voor het Signaalgesprek</h2>
           <div class="questions-container mt-4">
             <div class="questions"></div>
           </div>
