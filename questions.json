@@ -305,21 +305,20 @@
   },
   {
     "type": "outro",
-    "label": "Eindprofielen",
     "options": [
       {
         "score": 0,
-        "title": "De Signaalverkenner (15–25 punten)",
+        "title": "🌱 De Signaalverkenner (15–25 punten)",
         "label": "Je staat aan het begin: nieuwsgierig, maar nog zoekend naar houvast. Je ziet het belang van luisteren, maar de praktijk roept nog vragen op: over tijd, plek of aanpak. Dat is logisch: ieder gesprek begint met uitproberen. Kies een klein, haalbaar onderwerp en kijk wat werkt. Let op sfeer en toegankelijkheid. Dat maakt een groot verschil in hoe mensen zich openstellen. Je hoeft nog niets perfect te doen, als je maar bewust voorbereidt en echt luistert. Met elke stap groeit je vertrouwen én de kwaliteit van je gesprekken."
       },
       {
         "score": 26,
-        "title": "De Gesprekspionier (26–35 punten)",
+        "title": "🌼 De Gesprekspionier (26–35 punten)",
         "label": "Je bent goed op weg: je weet waarom dit soort gesprekken waardevol is en wilt er iets mee doen. De basis klopt, maar soms zit de uitdaging in de uitvoering: tijd, collega’s meekrijgen of de juiste toon vinden. Je weet al dat luisteren geen bijzaak is, maar een journalistieke kernvaardigheid. Gebruik dat inzicht om verder te bouwen aan je routine. Durf ook thema’s te kiezen die buiten je eigen belevingswereld liggen. Met iets meer structuur en aandacht voor sfeer zet je de stap van plannen naar doen. "
       },
       {
         "score": 36,
-        "title": "De Signaalheld (36–45 punten)",
+        "title": "🌻 De Signaalheld (36–45 punten)",
         "label": "Je bent goed voorbereid en denkt vanuit mensen, niet alleen vanuit productie. Je plant zorgvuldig, houdt rekening met wie er aan tafel zit en weet hoe je een open gesprek leidt. Luisteren, samenvatten en de juiste toon vinden gaan je natuurlijk af. Je bent niet bang om iets aan te passen als een gesprek nieuwe inzichten oplevert. Blijf scherp en nieuwsgierig: elk nieuw thema vraagt een frisse blik. Gebruik je ervaring om collega’s te helpen hun eigen gesprekken op te zetten. Je hebt de aanpak stevig in de vingers. Nu kan je echt het verschil maken."
       }
     ]

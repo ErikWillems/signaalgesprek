@@ -1,6 +1,8 @@
 let questionData = [];
 let questionCurrent = 0;
+let score = 0;
 const digestQuestions = function () {
+  score = 0;
   const questions = d3
     .select(".questions")
     .style("width", questionData.length * 100 + "%")
@@ -21,6 +23,9 @@ const digestQuestions = function () {
             if (question.type === "intro") {
               elem.append("p").text(question.label).attr("class", "mt-0 mb-4");
             } else if (question.type === "outro") {
+              elem.append("h2").attr("class", "mt-0 mb-4");
+              elem.append("h3").attr("class", "mt-0 mb-4");
+              elem.append("p").attr("class", "mt-0 mb-4");
               //
             } else {
               elem.append("h3").text(question.label).attr("class", "mt-0 mb-4");
@@ -104,6 +109,19 @@ const digestQuestions = function () {
     elem.selectAll("input").each(function (answer, index) {
       d3.select(this).property("checked", question.selected === index);
     });
+    if (typeof question.selected === "number") {
+      score += question.answers[question.selected].value;
+    }
+
+    if (question.type === "outro") {
+      question.options.forEach(function (option) {
+        if (score >= option.score) {
+          elem.select("h2").text("Score: " + score);
+          elem.select("h3").text(option.title);
+          elem.select("p").text(option.label);
+        }
+      });
+    }
   });
 
   d3.select(".questions").style(
@@ -119,6 +137,9 @@ const digestQuestions = function () {
     questionCurrent = 0;
     digestQuestions();
   });
+  console.log(score);
+  if (questionCurrent === questionData.length - 1) {
+  }
 };
 d3.json("./questions.json").then(function (data) {
   questionData = data;
