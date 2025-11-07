@@ -43,6 +43,11 @@
         --bs-btn-font-weight: var(--font-weight-bold);
       }
 
+      .btn.btn-link {
+        --bs-btn-color: var(--color-black);
+        --bs-btn-hover-color: var(--color-black);
+      }
+
       .navbar {
         --bs-navbar-color: var(--color-red);
 
@@ -143,6 +148,11 @@
       .question-card {
         background-color: var(--color-red);
         border-radius: 0.5rem;
+
+        background-image: url("./logo-card.svg");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 20px) calc(100% - 20px);
+        background-size: 2rem auto;
       }
 
       .answers {
@@ -256,7 +266,7 @@
           Aenean dapibus lorem sit amet lacus tristique scelerisque.
         </p>
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-12 col-lg-10 col-xl-8">
             <h2>Wat</h2>
             <p>
               Duis laoreet, dolor at dapibus tincidunt, mi nisl volutpat lectus,
@@ -276,6 +286,20 @@
             </ul>
           </div>
         </div>
+
+        <h2>Doe de test</h2>
+        <div class="questions-container mt-4">
+          <div class="questions"></div>
+        </div>
+        <div class="questions-footer text-end me-3 mt-1 fw-bold">
+          <div>
+            <span>Stap</span> <span class="count-current">1</span> /
+            <span class="count-total">2</span>
+          </div>
+
+          <button type="button" class="btn btn-link">Opnieuw</button>
+        </div>
+
         <div class="row">
           <div class="col-md-8 ms-auto">
             <h2>Waarom</h2>
@@ -312,16 +336,6 @@
               a laoreet venenatis.
             </p>
           </div>
-        </div>
-        <h2>Doe de test</h2>
-        <div class="questions-container mt-4">
-          <div class="questions"></div>
-        </div>
-        <div class="questions-footer text-end me-3 mt-1 fw-bold">
-          <span>Vraag</span> <span class="count-current">1</span> /
-          <span class="count-total">2</span>
-
-          <button type="button" class="btn btn-link">Opnieuw</button>
         </div>
 
         <div class="row">
