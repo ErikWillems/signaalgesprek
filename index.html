@@ -39,8 +39,13 @@
         --font-weight-bold: 600;
       }
 
+      .container {
+        max-width: 900px;
+      }
+
       .btn {
         --bs-btn-font-weight: var(--font-weight-bold);
+        text-transform: uppercase;
       }
 
       .btn.btn-link {
@@ -54,6 +59,20 @@
         --bs-btn-color: var(--color-black);
         --bs-btn-hover-color: var(--color-black);
         --bs-btn-border-color: 0px;
+      }
+
+      .card {
+        --bs-card-bg: var(--color-yellow);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        --bs-card-border-width: 0px;
+      }
+
+      .card-body {
+        padding: 3rem;
+      }
+
+      .card-body h2 {
+        margin-top: 0px;
       }
 
       .navbar {
@@ -79,7 +98,7 @@
       h4,
       h5 {
         font-weight: var(--font-weight-bold);
-        letter-spacing: 3px;
+        letter-spacing: 1px;
         text-transform: uppercase;
       }
 
@@ -99,10 +118,6 @@
         margin-bottom: 2rem;
       }
 
-      .row {
-        margin-top: 2rem;
-      }
-
       .fw-bold {
         font-weight: var(--font-weight-bold) !important;
       }
@@ -113,6 +128,31 @@
         position: sticky;
       }
 
+      blockquote {
+        position: relative;
+        margin-top: 5rem;
+        text-align: justify;
+        font-size: 1.8rem;
+        font-style: italic;
+        font-weight: 600;
+        padding-left: 3rem;
+        margin-right: 3rem;
+        line-height: 1.2;
+      }
+
+      blockquote::before {
+        content: "“";
+        position: absolute;
+        top: -0.5rem;
+        left: 0px;
+        font-size: 5rem;
+        color: var(--color-black);
+        line-height: 1;
+      }
+
+      section {
+        margin-top: 5rem;
+      }
       main {
         line-height: 1.6;
       }
@@ -256,271 +296,219 @@
         </div>
 
         <div class="row mt-5">
-          <div class="col-md-6">
-            <h1>
-              Minder raden.<br />
-              Meer weten.
-            </h1>
-          </div>
+          <h1>
+            Minder raden.<br />
+            Meer weten.
+          </h1>
         </div>
-        <div class="row">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <p class="fw-bold">
-              Het is tijd dat je eens praat met je publiek, via een
-              Signaalgesprek. Ontdek wat er speelt en welke uitdagingen mensen
-              hebben. Gebruik die inzichten om betere verhalen te schrijven,
-              scherpere redactionele keuzes te maken en meer draagvlak te
-              creëren voor je journalistiek. En dat in één sessie van 2 tot 3
-              uur.
-            </p>
-            <a class="mt-3 btn btn-lg btn-light" href="#">Doe de test!</a>
-          </div>
-        </div>
+        <section>
+          <p class="fw-bold">
+            Het is tijd dat je eens praat met je publiek, via een
+            Signaalgesprek. Ontdek wat er speelt en welke uitdagingen mensen
+            hebben. Gebruik die inzichten om betere verhalen te schrijven,
+            scherpere redactionele keuzes te maken en meer draagvlak te creëren
+            voor je journalistiek. En dat in één sessie van 2 tot 3 uur.
+          </p>
+          <a class="mt-3 btn btn-lg btn-light" href="#">Doe de test!</a>
+        </section>
         <!-- QUOTE 1-->
-        <div class="row mt-5">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <p class="fs-2 text-center">
-              “Ik kan hier wel vijf, zes onderwerpen uithalen die ik anders
-              nooit had ontdekt.” <br />
-              - Jana Flekken, Alkmaarsche Courant
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <h2>Wat is dit?</h2>
-            <p>
-              Een <strong>Signaalgesprek</strong> is een
-              <strong>bijeenkomst van 2 tot 3 uur</strong> met een groep mensen
-              die actief zijn in een specifiek domein. De redactie kiest het
-              thema, de deelnemers bepalen wat er besproken wordt.
-            </p>
-            <p>
-              Tijdens het gesprek luister je naar wat er speelt: welke zorgen,
-              ideeën en uitdagingen hebben mensen? Je ontdekt ook mogelijke
-              blinde vlekken in je verslaggeving.
-              <strong
-                >Vervolgens kijk je samen hoe je deze inzichten kan
-                gebruiken</strong
-              >
-              voor nieuwe verhalen, samenwerkingen of vervolgonderzoek.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <h2>Vanwaar dit idee?</h2>
-            <p>
-              De band tussen journalist en publiek is vaak óf bron, óf lezer.
-              Jammer, want zo missen we frisse perspectieven en nieuwe stemmen.
-              <strong
-                >Het publiek weet veel, maar we luisteren te weinig.</strong
-              >
-              Het is tijd dat we mensen mee laten denken en zo ook het
-              vertrouwen in de journalistiek versterken.
-            </p>
-          </div>
-        </div>
-        <!-- QUOTE 2-->
-        <div class="row mt-5">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <p class="fs-2 text-center">
-              “In een paar uur kreeg ik dankzij de discussie
-              <strong>veel nieuwe inzichten</strong>. Dat lukt nooit als je
-              mensen apart spreekt. En mijn netwerk is in die paar uur flink
-              gegroeid.”<br />
-              - Debbie de Vries, Dagblad Waterland
-            </p>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <h2>Een Signaalgesprek is handig als je:</h2>
-            <ul>
-              <li>
-                Meer wilt schrijven over een thema, maar nog niet goed weet hoe
-                of wat
-              </li>
-              <li>
-                Merkt dat sommige groepen zich niet herkennen in jullie verhalen
-              </li>
-              <li>De band met je publiek wilt versterken</li>
-              <li>Een onderwerp of thema (nog) beter wilt begrijpen</li>
-              <li>
-                Een doelgroep beter wilt leren kennen - en hen ook graag een
-                handje helpt
-              </li>
-            </ul>
-            <p>
-              <img src="image1.jpg" class="img-fluid" alt="Responsive image" />
-            </p>
-          </div>
-          <div class="col-md-4"></div>
-        </div>
-
-        <!-- QUOTE 3-->
-        <div class="row mt-5">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <p class="fs-2 text-center">
-              “Ik voel me meer verbonden met de krant, journalisten zijn nu
-              minder eng.”<br />- Deelnemer
-            </p>
-          </div>
-        </div>
-
-        <!-- 2 col-->
-        <div class="row mt-5">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <h2>Waarom?</h2>
-            <p>Een Signaalgesprek levert heel wat op:</p>
-            <ul>
-              <li>2 tot 5 nieuwe verhaalideeën</li>
-              <li>Waardevolle informatie uit de eerste hand</li>
-              <li>Ideeën voor nieuwe rubrieken en formats</li>
-              <li>Input om je redactionele koers aan te scherpen</li>
-              <li>Een sterkere band met je publiek</li>
-              <li>Meer begrip en steun voor je journalistiek</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- QUOTE 4-->
-        <div class="row mt-5">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <p class="fs-2 text-center">
-              “Waanzinnig dat een gesprek van maar twee uur zoveel kan opleveren
-              waarvan ik echt geen idee had.”<br />- Jana Flekken, Alkmaarsche
-              Courant
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <h2>Hoe werkt het?</h2>
-            <h3>Ronde 1: kennismaking + uitdagingen delen</h3>
-            <p>
-              Iedereen stelt zich kort voor en deelt één tot drie uitdagingen.
-            </p>
-            <p class="fst-italic">Korte pauze</p>
-            <h3>Ronde 2: brainstorm</h3>
-            <p>
-              Samen bedenk je ideeën rond deze uitdagingen. Een fijne werkvorm
-              hiervoor is 'brainwriting': iedereen schrijft ideeën op papier,
-              geeft het vel door en vult aan op elkaars input.
-            </p>
-            <p class="fst-italic">Korte pauze</p>
-            <h3>Ronde 3: hoe nu verder?​</h3>
-            <p>Je bespreekt de volgende stappen. Bijvoorbeeld:</p>
-            <ul>
-              <li>Heeft de redactie nieuwe verhaalideeën?</li>
-              <li>
-                Kan een deelnemer een oproep doen om iets verder te brengen?
-              </li>
-              <li>Zijn er kansen om samen te werken?</li>
-            </ul>
-            <p class="fst-italic">Afsluiten</p>
-            <p>
-              Een Signaalgesprek duurt doorgaans zo'n 3 uur, afhankelijk van je
-              groep. Zorg altijd voor lunch of snacks: dat doet wonderen voor de
-              sfeer.
-            </p>
-          </div>
-        </div>
-
-        <!-- QUOTE 5-->
-        <div class="row mt-5">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <p class="fs-2 text-center">
-              “Tijdens het gesprek konden we goed uitleggen waarom bepaalde
-              beslissingen zijn genomen. Er werd open gesproken over wat niet
-              goed ging.”<br />
-              - Debbie de Vries, Dagblad Waterland
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <h2>Wil je zelf aan de slag?</h2>
-            <p>
-              Hier vind je alle documenten om een Signaalgesprek te organiseren
-              op jouw redactie.
-            </p>
-            <p>
-              <a class="btn btn-light" href="#">Download alle documenten</a>
-            </p>
-            <p>
-              Heb je nog vragen? Of wil je gratis begeleiding? Mail dan naar:
-              josjekerkhoven@svdjincubator.nl
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <h2>Wie zit erachter?</h2>
-            <p>
-              Het Signaalgesprek komt voort uit experimenteel innovatief
-              onderzoek bij het Incubatorprogramma van het Stimuleringsfonds
-              voor de Journalistiek.
-            </p>
-            <p>Hieronder zie je wie eraan meewerkt:</p>
-            <div class="row mb-4">
-              <div class="col-md-4">Josje</div>
-              <div class="col-md-4">Gert-Jaap</div>
-              <div class="col-md-4">Jantina</div>
-              <div class="col-md-4">Michiel</div>
-              <div class="col-md-4">Elise</div>
-              <div class="col-md-4">Christiane</div>
-            </div>
-            <p>Teamsupport:</p>
-            <div class="row">
-              <div class="col-md-4">Erik</div>
+        <blockquote>
+          Ik kan hier wel vijf, zes onderwerpen uithalen die ik anders nooit had
+          ontdekt.<br />
+          - Jana Flekken, Alkmaarsche Courant
+        </blockquote>
+        <section>
+          <h2>Wat is dit?</h2>
+          <p>
+            Een <strong>Signaalgesprek</strong> is een
+            <strong>bijeenkomst van 2 tot 3 uur</strong> met een groep mensen
+            die actief zijn in een specifiek domein. De redactie kiest het
+            thema, de deelnemers bepalen wat er besproken wordt.
+          </p>
+          <p>
+            Tijdens het gesprek luister je naar wat er speelt: welke zorgen,
+            ideeën en uitdagingen hebben mensen? Je ontdekt ook mogelijke blinde
+            vlekken in je verslaggeving.
+            <strong
+              >Vervolgens kijk je samen hoe je deze inzichten kan
+              gebruiken</strong
+            >
+            voor nieuwe verhalen, samenwerkingen of vervolgonderzoek.
+          </p>
+        </section>
+        <section>
+          <h2>Vanwaar dit idee?</h2>
+          <p>
+            De band tussen journalist en publiek is vaak óf bron, óf lezer.
+            Jammer, want zo missen we frisse perspectieven en nieuwe stemmen.
+            <strong>Het publiek weet veel, maar we luisteren te weinig.</strong>
+            Het is tijd dat we mensen mee laten denken en zo ook het vertrouwen
+            in de journalistiek versterken.
+          </p>
+        </section>
+        <blockquote>
+          In een paar uur kreeg ik dankzij de discussie
+          <strong>veel nieuwe inzichten</strong>. Dat lukt nooit als je mensen
+          apart spreekt. En mijn netwerk is in die paar uur flink gegroeid.<br />
+          - Debbie de Vries, Dagblad Waterland
+        </blockquote>
+        <section>
+          <div class="card">
+            <div class="card-body">
+              <h2>Een Signaalgesprek is handig als je:</h2>
+              <ul>
+                <li>
+                  Meer wilt schrijven over een thema, maar nog niet goed weet
+                  hoe of wat
+                </li>
+                <li>
+                  Merkt dat sommige groepen zich niet herkennen in jullie
+                  verhalen
+                </li>
+                <li>De band met je publiek wilt versterken</li>
+                <li>Een onderwerp of thema (nog) beter wilt begrijpen</li>
+                <li>
+                  Een doelgroep beter wilt leren kennen - en hen ook graag een
+                  handje helpt
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-        <!-- Quiz -->
-        <h2>Hoe goed ken jij je publiek écht?</h2>
-        <div class="questions-container mt-4">
-          <div class="questions"></div>
-        </div>
-        <div class="questions-footer text-end me-3 mt-1 fw-bold">
-          <div>
-            <span>Stap</span> <span class="count-current">1</span> /
-            <span class="count-total">2</span>
-          </div>
+        </section>
+        <img src="image1.jpg" class="img-fluid" alt="Responsive image" />
 
-          <button type="button" class="btn btn-link">Opnieuw</button>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <h2>Vragen? Of wil je samenwerken?</h2>
-            <p>
-              Bel of app Josje Kerkhoven: 06-44130324. Mailen kan ook:
-              signaalgesprek@gmail.com
-            </p>
+        <blockquote>
+          Ik voel me meer verbonden met de krant, journalisten zijn nu minder
+          eng.<br />- Deelnemer
+        </blockquote>
+        <section>
+          <h2>Waarom?</h2>
+          <p>Een Signaalgesprek levert heel wat op:</p>
+          <ul>
+            <li>2 tot 5 nieuwe verhaalideeën</li>
+            <li>Waardevolle informatie uit de eerste hand</li>
+            <li>Ideeën voor nieuwe rubrieken en formats</li>
+            <li>Input om je redactionele koers aan te scherpen</li>
+            <li>Een sterkere band met je publiek</li>
+            <li>Meer begrip en steun voor je journalistiek</li>
+          </ul>
+        </section>
+        <blockquote>
+          Waanzinnig dat een gesprek van maar twee uur zoveel kan opleveren
+          waarvan ik echt geen idee had.<br />- Jana Flekken, Alkmaarsche
+          Courant
+        </blockquote>
+        <section>
+          <div class="card">
+            <div class="card-body">
+              <h2>Hoe werkt het?</h2>
+              <h3>Ronde 1: kennismaking + uitdagingen delen</h3>
+              <p>
+                Iedereen stelt zich kort voor en deelt één tot drie uitdagingen.
+              </p>
+              <p class="fst-italic">Korte pauze</p>
+              <h3>Ronde 2: brainstorm</h3>
+              <p>
+                Samen bedenk je ideeën rond deze uitdagingen. Een fijne werkvorm
+                hiervoor is 'brainwriting': iedereen schrijft ideeën op papier,
+                geeft het vel door en vult aan op elkaars input.
+              </p>
+              <p class="fst-italic">Korte pauze</p>
+              <h3>Ronde 3: hoe nu verder?​</h3>
+              <p>Je bespreekt de volgende stappen. Bijvoorbeeld:</p>
+              <ul>
+                <li>Heeft de redactie nieuwe verhaalideeën?</li>
+                <li>
+                  Kan een deelnemer een oproep doen om iets verder te brengen?
+                </li>
+                <li>Zijn er kansen om samen te werken?</li>
+              </ul>
+              <p class="fst-italic">Afsluiten</p>
+              <p>
+                Een Signaalgesprek duurt doorgaans zo'n 3 uur, afhankelijk van
+                je groep. Zorg altijd voor lunch of snacks: dat doet wonderen
+                voor de sfeer.
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <blockquote>
+          Tijdens het gesprek konden we goed uitleggen waarom bepaalde
+          beslissingen zijn genomen. Er werd open gesproken over wat niet goed
+          ging.<br />
+          - Debbie de Vries, Dagblad Waterland
+        </blockquote>
+
+        <section>
+          <h2>Wil je zelf aan de slag?</h2>
+          <p>
+            Hier vind je alle documenten om een Signaalgesprek te organiseren op
+            jouw redactie.
+          </p>
+          <p>
+            <a class="btn btn-light" href="#">Download alle documenten</a>
+          </p>
+          <p>
+            Heb je nog vragen? Of wil je gratis begeleiding? Mail dan naar:
+            josjekerkhoven@svdjincubator.nl
+          </p>
+        </section>
+
+        <section>
+          <h2>Wie zit erachter?</h2>
+          <p>
+            Het Signaalgesprek komt voort uit experimenteel innovatief onderzoek
+            bij het Incubatorprogramma van het Stimuleringsfonds voor de
+            Journalistiek.
+          </p>
+          <p>Hieronder zie je wie eraan meewerkt:</p>
+          <div class="row mb-4">
+            <div class="col-md-4">Josje</div>
+            <div class="col-md-4">Gert-Jaap</div>
+            <div class="col-md-4">Jantina</div>
+            <div class="col-md-4">Michiel</div>
+            <div class="col-md-4">Elise</div>
+            <div class="col-md-4">Christiane</div>
+          </div>
+          <p>Teamsupport:</p>
+          <div class="row">
+            <div class="col-md-4">Erik</div>
+          </div>
+        </section>
+        <section>
+          <!-- Quiz -->
+          <h2>Hoe goed ken jij je publiek écht?</h2>
+          <div class="questions-container mt-4">
+            <div class="questions"></div>
+          </div>
+          <div class="questions-footer text-end me-3 mt-1 fw-bold">
+            <div>
+              <span>Stap</span> <span class="count-current">1</span> /
+              <span class="count-total">2</span>
+            </div>
+
+            <button type="button" class="btn btn-link">Opnieuw</button>
+          </div>
+        </section>
+        <section>
+          <h2>Vragen? Of wil je samenwerken?</h2>
+          <p>
+            Bel of app Josje Kerkhoven: 06-44130324. Mailen kan ook:
+            signaalgesprek@gmail.com
+          </p>
+        </section>
 
         <!-- QUOTE 6-->
-        <div class="row mt-5">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <p class="fs-2 text-center">
-              “De krant en journalistiek voelden dichterbij dan ooit.”<br />-
-              Deelnemer
-            </p>
-          </div>
-        </div>
+        <blockquote>
+          De krant en journalistiek voelden dichterbij dan ooit.<br />-
+          Deelnemer
+        </blockquote>
 
-        <div class="row">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <h2>Veelgestelde vragen</h2>
-            <p>Komt hier</p>
-          </div>
-        </div>
+        <section>
+          <h2>Veelgestelde vragen</h2>
+          <p>Komt hier</p>
+        </section>
       </div>
     </main>
 
