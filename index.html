@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Signaalgesprek</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Signaalgesprek - Minder raden. Meer weten.</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -92,6 +92,19 @@
         background-size: 2rem auto;
       }
 
+      .credits > div > div {
+        background-color: var(--color-yellow);
+        height: 100%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        --bs-card-border-width: 0px;
+        padding: 1rem 0.5rem 5rem 0.5rem;
+        background-image: url("./logo-card.svg");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 20px) calc(100% - 20px);
+        background-size: 2rem auto;
+        border-radius: 0.5rem;
+      }
+
       .card-body h2 {
         margin-top: 0px;
       }
@@ -111,6 +124,10 @@
 
       body {
         font-family: "Open Sans", sans-serif;
+      }
+
+      strong {
+        font-weight: 700;
       }
 
       h1,
@@ -153,13 +170,15 @@
       blockquote {
         position: relative;
         margin-top: 5rem;
+        margin-bottom: 5rem;
         text-align: justify;
         font-size: 1.8rem;
         font-style: italic;
         font-weight: 600;
-        padding-left: 3rem;
-        margin-right: 3rem;
+        padding-left: 4rem;
+        padding-right: 2rem;
         line-height: 1.2;
+        border-right: 2px solid #000;
       }
 
       blockquote::before {
@@ -181,6 +200,7 @@
 
       section {
         margin-top: 5rem;
+        margin-bottom: 5rem;
       }
       main {
         line-height: 1.6;
@@ -189,6 +209,28 @@
 
       main p {
         text-align: justify;
+      }
+
+      main ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      main ul li {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 0.6rem;
+      }
+
+      main ul li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.3em;
+        width: 16px;
+        height: 16px;
+        background: url("check.svg") no-repeat center;
+        background-size: contain;
       }
 
       .logo {
@@ -346,8 +388,8 @@
         </section>
         <!-- QUOTE 1-->
         <blockquote>
-          Ik kan hier wel vijf, zes onderwerpen uithalen die ik anders nooit had
-          ontdekt.
+          Ik kan hier wel vijf, zes onderwerpen uithalen
+          <strong>die ik anders nooit had ontdekt.</strong>
           <span>Jana Flekken, Alkmaarsche Courant</span>
         </blockquote>
         <section>
@@ -399,11 +441,13 @@
             </div>
           </div>
         </section>
-        <img src="image1.jpg" class="img-fluid mt-4" alt="Responsive image" />
+        <section>
+          <img src="image1.jpg" class="img-fluid" alt="Responsive image" />
+        </section>
 
         <blockquote>
-          Ik voel me meer verbonden met de krant, journalisten zijn nu minder
-          eng.<span>Deelnemer<span>
+          Ik voel me meer verbonden met de krant, journalisten zijn nu
+          <strong>minder eng</strong>.<span>Deelnemer</span>
         </blockquote>
         <section>
           <h2 id="waarom">Waarom?</h2>
@@ -425,8 +469,10 @@
           </ul>
         </section>
         <blockquote>
-          Waanzinnig dat een gesprek van maar twee uur zoveel kan opleveren
-          waarvan ik echt geen idee had.<span>Jana Flekken, Alkmaarsche Courant</span>
+          Waanzinnig dat een gesprek van <strong>maar twee uur</strong> zoveel
+          kan opleveren waarvan ik echt geen idee had.<span
+            >Jana Flekken, Alkmaarsche Courant</span
+          >
         </blockquote>
         <section>
           <div class="card">
@@ -468,9 +514,9 @@
         </section>
 
         <blockquote>
-          Tijdens het gesprek konden we goed uitleggen waarom bepaalde
-          beslissingen zijn genomen. Er werd open gesproken over wat niet goed
-          ging.
+          Tijdens het gesprek konden we <strong>goed uitleggen</strong> waarom
+          bepaalde beslissingen zijn genomen. Er werd open gesproken over wat
+          niet goed ging.
           <span>Debbie de Vries, Dagblad Waterland</span>
         </blockquote>
 
@@ -484,64 +530,90 @@
             oplossingen voor meer publieksbetrokkenheid in Nederland.
           </p>
           <h3>Hieronder zie je wie de methode hebben ontwikkeld:</h3>
-          <div class="row mt-5 mb-5 text-center">
+          <div class="credits row mt-5 mb-5 text-center">
             <div class="col-md-4">
-              <strong>Christiane Gronenberg</strong><br />
-              is hoofdredacteur van Zout, onafhankelijk tijdschrift en online
-              platform over kunst en cultuur
+              <div>
+                <strong>Christiane Gronenberg</strong><br />
+                is hoofdredacteur van Zout, onafhankelijk tijdschrift en online
+                platform over kunst en cultuur
+              </div>
             </div>
             <div class="col-md-4">
-              <strong>Gert-Jaap Hoekman</strong><br />
-              is journalist en projectleider bij DPG Media
+              <div>
+                <strong>Gert-Jaap Hoekman</strong><br />
+                is journalist en projectleider bij DPG Media
+              </div>
             </div>
             <div class="col-md-4">
-              <strong>Josje Kerkhoven</strong><br />
-              is journalist, coördinator bij het Domein voor Kunstkritiek en
-              stelde bij de vorige Incubator het handboek Publiekswijs samen
+              <div>
+                <strong>Josje Kerkhoven</strong><br />
+                is journalist, coördinator bij het Domein voor Kunstkritiek en
+                stelde bij de vorige Incubator het handboek Publiekswijs samen
+              </div>
             </div>
           </div>
-          <div class="row mb-5 text-center">
+          <div class="credits row mb-5 text-center">
             <div class="col-md-4">
-              <strong>Elise Sijthoff</strong><br />
-              is kinderrechtenactiviste, onderzoeksjournalist en internationale
-              uitgever
+              <div>
+                <strong>Elise Sijthoff</strong><br />
+                is kinderrechtenactiviste, onderzoeksjournalist en
+                internationale uitgever
+              </div>
             </div>
             <div class="col-md-4">
-              <strong> Michiel Snik</strong><br />
-              is onderzoeksjournalist en ombudsman (lost problemen van lezers op
-              hun verzoek op) bij de regionale dagbladen van Mediahuis-West.
+              <div>
+                <strong> Michiel Snik</strong><br />
+                is onderzoeksjournalist en ombudsman (lost problemen van lezers
+                op hun verzoek op) bij de regionale dagbladen van
+                Mediahuis-West.
+              </div>
             </div>
             <div class="col-md-4">
-              <strong>Jantina de Vries</strong><br />
-              is journalist en onderzoeker
+              <div>
+                <strong>Jantina de Vries</strong><br />
+                is journalist en onderzoeker
+              </div>
             </div>
           </div>
           <h3>Dank aan:</h3>
 
-          <div class="row mt-5 mb-5 text-center">
+          <div class="credits row mt-5 mb-5 text-center">
             <div class="col-md-4">
-              <strong>Erik Willems</strong><br />was teamcoach en dacht mee
+              <div>
+                <strong>Erik Willems</strong><br />was teamcoach en dacht mee
+              </div>
             </div>
             <div class="col-md-4">
-              <strong>Alexander Verbist</strong><br />schreef teksten en maakte
-              stijlgids
+              <div>
+                <strong>Alexander Verbist</strong><br />schreef teksten en
+                maakte stijlgids
+              </div>
             </div>
             <div class="col-md-4">
-              <strong>Annebeth Nies</strong><br />maakte de huisstijl en artwork
+              <div>
+                <strong>Annebeth Nies</strong><br />maakte de huisstijl en
+                artwork
+              </div>
             </div>
           </div>
-          <div class="row mt-5 mb-5 text-center">
+          <div class="credits row mt-5 mb-5 text-center">
             <div class="col-md-4">
-              <strong>Stimuleringsfonds voor de Journalistiek</strong><br />voor
-              het initieren en mogelijk maken van dit project
+              <div>
+                <strong>Stimuleringsfonds voor de Journalistiek</strong
+                ><br />voor het initieren en mogelijk maken van dit project
+              </div>
             </div>
             <div class="col-md-4">
-              <strong>Stephanie en Devid</strong><br />voor het herdrukken van
-              Publiekswijs
+              <div>
+                <strong>Stephanie en Devid</strong><br />voor het herdrukken van
+                Publiekswijs
+              </div>
             </div>
             <div class="col-md-4">
-              <strong>Mediapartners</strong><br />die de experimenten mogelijk
-              hebben gemaakt
+              <div>
+                <strong>Mediapartners</strong><br />die de experimenten mogelijk
+                hebben gemaakt
+              </div>
             </div>
           </div>
           <h3 class="mt-4">Vragen? Of wil je samenwerken?</h3>
