@@ -1,7 +1,10 @@
 let questionData = [];
+let questionCurrent = 0;
 const digestQuestions = function () {
   const questions = d3
     .select(".questions")
+    .style("width", questionData.length * 100 + "%")
+    .style("grid-template-columns", "repeat(" + questionData.length + ", 1fr)")
     .selectAll(".question")
     .data(questionData)
     .join(
@@ -14,17 +17,11 @@ const digestQuestions = function () {
             const elem = d3
               .select(this)
               .append("div")
-              .attr("class", "question-card p-5 m-1 shadow");
+              .attr("class", "question-card p-5 m-1");
             if (question.type === "intro") {
               elem.append("p").text(question.label).attr("class", "mt-0 mb-4");
-              elem
-                .append("button")
-                .attr("class", "btn btn-lg btn-secondary")
-                .text("Start de test!")
-                .on("click", function () {
-                  question.selected = -1;
-                  digestQuestions();
-                });
+            } else if (question.type === "outro") {
+              //
             } else {
               elem.append("h3").text(question.label).attr("class", "mt-0 mb-4");
               elem
@@ -43,7 +40,7 @@ const digestQuestions = function () {
                         label
                           .append("input")
                           .attr("type", "radio")
-                          .on("input", function () {
+                          .on("change", function () {
                             question.selected = answerIndex;
                             digestQuestions();
                           });
@@ -59,6 +56,25 @@ const digestQuestions = function () {
                   }
                 );
             }
+
+            const feedback = elem
+              .append("p")
+              .attr("class", "feedback mt-4 fst-italic");
+
+            const button = elem
+              .append("button")
+              .attr("class", "btn btn-lg btn-secondary mt-4")
+              .on("click", function () {
+                questionCurrent += 1;
+                digestQuestions();
+              });
+            if (question.type === "intro") {
+              button.text("Start de test!");
+            } else if (question.type === "outro") {
+              button.style("display", "none");
+            } else {
+              button.text("Volgende vraag");
+            }
           });
       },
       function (update) {
@@ -68,31 +84,39 @@ const digestQuestions = function () {
         exit.remove();
       }
     );
-  console.log(questionData);
-  let answeredIndex = 0;
+
   questions.each(function (question) {
+    const elem = d3.select(this);
+    elem
+      .select("button")
+      .attr(
+        "disabled",
+        !question.type && typeof question.selected !== "number"
+          ? "disabled"
+          : null
+      );
     if (typeof question.selected === "number") {
-      answeredIndex += 1;
+      elem
+        .select(".feedback")
+        .text(question.answers[question.selected].feedback);
     }
-    const questionElem = d3.select(this);
-    questionElem.selectAll(".answer").each(function (answer, answerIndex) {
-      d3.select(this)
-        .select("input")
-        .property("checked", question.selected === answerIndex);
+
+    elem.selectAll("input").each(function (answer, index) {
+      d3.select(this).property("checked", question.selected === index);
     });
   });
 
   d3.select(".questions").style(
     "transform",
-    "translateX(" + answeredIndex * -25 + "%)"
+    "translateX(" + questionCurrent * -(100 / questionData.length) + "%)"
   );
-
   d3.select(".questions-footer .count-total").text(questionData.length);
-  d3.select(".questions-footer .count-current").text(answeredIndex + 1);
+  d3.select(".questions-footer .count-current").text(questionCurrent + 1);
   d3.select(".questions-footer button").on("click", function () {
     questionData.forEach(function (question) {
       question.selected = null;
     });
+    questionCurrent = 0;
     digestQuestions();
   });
 };
