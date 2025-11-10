@@ -40,6 +40,12 @@
         --font-weight-bold: 600;
       }
 
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+
       .container {
         max-width: 900px;
       }
@@ -85,11 +91,27 @@
       }
 
       .card-body {
-        padding: 3rem;
+        padding: 2rem;
         background-image: url("./logo-card.svg");
         background-repeat: no-repeat;
         background-position: calc(100% - 20px) calc(100% - 20px);
         background-size: 2rem auto;
+      }
+
+      @media (min-width: 768px) {
+        .card-body {
+          padding: 3rem;
+        }
+      }
+
+      .credits {
+        grid-template-columns: 1fr;
+      }
+      @media (min-width: 768px) {
+        /* Bootstrap lg breakpoint */
+        .credits {
+          grid-template-columns: repeat(3, 1fr);
+        }
       }
 
       .credits > div > div {
@@ -97,7 +119,7 @@
         height: 100%;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         --bs-card-border-width: 0px;
-        padding: 1rem 0.5rem 5rem 0.5rem;
+        padding: 1rem 1rem 5rem 1rem;
         background-image: url("./logo-card.svg");
         background-repeat: no-repeat;
         background-position: calc(100% - 20px) calc(100% - 20px);
@@ -172,13 +194,13 @@
         margin-top: 5rem;
         margin-bottom: 5rem;
         text-align: justify;
-        font-size: 1.8rem;
+        font-size: 1.25rem;
         font-style: italic;
         font-weight: 600;
         padding-left: 4rem;
         padding-right: 2rem;
         line-height: 1.2;
-        border-right: 2px solid #000;
+        border-right: 3px solid #000;
       }
 
       blockquote::before {
@@ -196,6 +218,12 @@
         text-align: right;
         font-size: 1.2rem;
         margin-top: 1.2rem;
+      }
+
+      @media (min-width: 768px) {
+        blockquote {
+          font-size: 1.5rem;
+        }
       }
 
       section {
@@ -530,37 +558,35 @@
             oplossingen voor meer publieksbetrokkenheid in Nederland.
           </p>
           <h3>Hieronder zie je wie de methode hebben ontwikkeld:</h3>
-          <div class="credits row mt-5 mb-5 text-center">
-            <div class="col-md-4">
+          <div class="credits d-grid gap-3 mt-5 mb-5 text-center">
+            <div>
               <div>
                 <strong>Christiane Gronenberg</strong><br />
                 is hoofdredacteur van Zout, onafhankelijk tijdschrift en online
                 platform over kunst en cultuur
               </div>
             </div>
-            <div class="col-md-4">
+            <div>
               <div>
                 <strong>Gert-Jaap Hoekman</strong><br />
                 is journalist en projectleider bij DPG Media
               </div>
             </div>
-            <div class="col-md-4">
+            <div>
               <div>
                 <strong>Josje Kerkhoven</strong><br />
                 is journalist, coördinator bij het Domein voor Kunstkritiek en
                 stelde bij de vorige Incubator het handboek Publiekswijs samen
               </div>
             </div>
-          </div>
-          <div class="credits row mb-5 text-center">
-            <div class="col-md-4">
+            <div>
               <div>
                 <strong>Elise Sijthoff</strong><br />
                 is kinderrechtenactiviste, onderzoeksjournalist en
                 internationale uitgever
               </div>
             </div>
-            <div class="col-md-4">
+            <div>
               <div>
                 <strong> Michiel Snik</strong><br />
                 is onderzoeksjournalist en ombudsman (lost problemen van lezers
@@ -568,7 +594,7 @@
                 Mediahuis-West.
               </div>
             </div>
-            <div class="col-md-4">
+            <div>
               <div>
                 <strong>Jantina de Vries</strong><br />
                 is journalist en onderzoeker
@@ -577,39 +603,38 @@
           </div>
           <h3>Dank aan:</h3>
 
-          <div class="credits row mt-5 mb-5 text-center">
-            <div class="col-md-4">
+          <div class="credits d-grid gap-3 mt-5 mb-5 text-center">
+            <div>
               <div>
                 <strong>Erik Willems</strong><br />was teamcoach en dacht mee
               </div>
             </div>
-            <div class="col-md-4">
+            <div>
               <div>
                 <strong>Alexander Verbist</strong><br />schreef teksten en
                 maakte stijlgids
               </div>
             </div>
-            <div class="col-md-4">
+            <div>
               <div>
                 <strong>Annebeth Nies</strong><br />maakte de huisstijl en
                 artwork
               </div>
             </div>
-          </div>
-          <div class="credits row mt-5 mb-5 text-center">
-            <div class="col-md-4">
+
+            <div>
               <div>
                 <strong>Stimuleringsfonds voor de Journalistiek</strong
                 ><br />voor het initieren en mogelijk maken van dit project
               </div>
             </div>
-            <div class="col-md-4">
+            <div>
               <div>
                 <strong>Stephanie en Devid</strong><br />voor het herdrukken van
                 Publiekswijs
               </div>
             </div>
-            <div class="col-md-4">
+            <div>
               <div>
                 <strong>Mediapartners</strong><br />die de experimenten mogelijk
                 hebben gemaakt
