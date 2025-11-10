@@ -34,7 +34,7 @@
               const elem = d3
                 .select(this)
                 .append("div")
-                .attr("class", "question-card p-5 m-1");
+                .attr("class", "question-card p-4 p-lg-5 m-1");
               if (question.type === "intro") {
                 elem
                   .append("p")
