@@ -1,10 +1,10 @@
 [
   {
     "type": "intro",
-    "label": "Ga na hoe goed jij bent voorbereid om met mensen in gesprek te gaan over wat er speelt in hun wereld - of dat nu gaat over cultuur, sport, klimaat of het dagelijks leven. Na elke vraag zie je meteen wat je keuze zegt. Aan het eind krijg je jouw profiel en advies."
+    "label": "Ga na hoe goed jij bent voorbereid om met mensen in gesprek te gaan over wat er speelt in hun wereld, of dat nu gaat over cultuur, sport, klimaat of het dagelijks leven. Na elke vraag zie je meteen wat je keuze zegt. Aan het eind krijg je jouw profiel en advies."
   },
   {
-    "label": "Wanneer zou jij zo'n groepsgesprek plannen?",
+    "label": "Wanneer zou jij dit groepsgesprek plannen?",
     "answers": [
       {
         "label": "Gewoon op een moment dat in de redactiekalender past.",
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "label": "Wat hoort er volgens jou bij de sfeer van zo'n bijeenkomst?",
+    "label": "Wat hoort er volgens jou bij de sfeer van deze bijeenkomst?",
     "answers": [
       {
         "label": "Iets kleins en passend bij het tijdstip: broodjes, fruit of snack.",
@@ -124,7 +124,7 @@
     ]
   },
   {
-    "label": "Wat is je insteek bij het organiseren van zo'n gesprek?",
+    "label": "Wat is je insteek bij het organiseren van dit gesprek?",
     "answers": [
       {
         "label": "Ik hoop dat er bruikbare verhalen uitkomen.",
@@ -238,7 +238,7 @@
       },
       {
         "label": "Ik luister eerst om te begrijpen waarom het raakt, zonder meteen te reageren.",
-        "feedback": "Sterk - zo ontstaat ruimte voor herstel én beter contact. Je kunt daarna eventueel uitleggen wat er is gebeurd, of overleggen hoe het voortaan anders kan.",
+        "feedback": "Sterk, zo ontstaat ruimte voor herstel én beter contact. Je kunt daarna eventueel uitleggen wat er is gebeurd, of overleggen hoe het voortaan anders kan.",
         "value": 2
       }
     ]
@@ -293,7 +293,7 @@
       },
       {
         "label": "Ik hoop dat het gesprek nieuwe ideeën oplevert, ook als die onverwacht zijn.",
-        "feedback": "Zo'n open houding! Mooi. Sta je er ook voor open iets aan te passen aan je redactionele koers, zoals je tone of voice?",
+        "feedback": "Fijne open houding! Mooi. Sta je er ook voor open iets aan te passen aan je redactionele koers, zoals je tone of voice?",
         "value": 2
       },
       {
