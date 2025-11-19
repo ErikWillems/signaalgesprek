@@ -143,6 +143,11 @@
           }
         });
       }
+
+      d3.selectAll(".questions-footer button").classed(
+        "d-none",
+        questionCurrent == 0
+      );
     });
 
     d3.select(".questions").style(
@@ -151,11 +156,18 @@
     );
     d3.select(".questions-footer .count-total").text(questionData.length);
     d3.select(".questions-footer .count-current").text(questionCurrent + 1);
-    d3.select(".questions-footer button").on("click", function () {
+    d3.select(".questions-footer button.reset").on("click", function () {
       questionData.forEach(function (question) {
         question.selected = null;
       });
       questionCurrent = 0;
+      digestQuestions();
+    });
+    d3.select(".questions-footer button.back").on("click", function () {
+      questionCurrent -= 1;
+      if (questionCurrent < 0) {
+        questionCurrent = 0;
+      }
       digestQuestions();
     });
     console.log(score);
